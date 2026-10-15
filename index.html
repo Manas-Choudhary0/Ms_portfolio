@@ -1,0 +1,407 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manas Choudhary | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <canvas id="bgCanvas"></canvas>
+  <div id="transitionOverlay">
+    <div class="glitch-lines"></div>
+    <div class="anime-char" id="transitionChar"></div>
+    <div class="car-sweep" id="carSweep"></div>
+    <div class="transition-text" id="transitionText"></div>
+  </div>
+  <div id="particleBurst"></div>
+  <nav id="sideNav">
+    <div class="nav-glow-line"></div>
+    <div class="nav-items">
+      <div class="nav-item active" data-section="home"><div class="nav-dot"></div><span class="nav-label">HOME</span><i class="fas fa-home nav-icon"></i></div>
+      <div class="nav-item" data-section="about"><div class="nav-dot"></div><span class="nav-label">ABOUT</span><i class="fas fa-user nav-icon"></i></div>
+      <div class="nav-item" data-section="education"><div class="nav-dot"></div><span class="nav-label">EDUCATION</span><i class="fas fa-graduation-cap nav-icon"></i></div>
+      <div class="nav-item" data-section="skills"><div class="nav-dot"></div><span class="nav-label">SKILLS</span><i class="fas fa-code nav-icon"></i></div>
+      <div class="nav-item" data-section="achievements"><div class="nav-dot"></div><span class="nav-label">CERTS</span><i class="fas fa-trophy nav-icon"></i></div>
+      <div class="nav-item" data-section="contact"><div class="nav-dot"></div><span class="nav-label">CONTACT</span><i class="fas fa-envelope nav-icon"></i></div>
+    </div>
+    <div class="social-links">
+      <a href="https://github.com/" target="_blank" class="social-btn" title="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com/" target="_blank" class="social-btn" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+    </div>
+  </nav>
+  <main id="mainContent">
+    <!-- HOME -->
+    <section id="home" class="section active-section">
+      <div class="section-bg home-bg">
+        <div class="grid-lines"></div>
+        <div class="floating-code" id="floatingCode"></div>
+        <div class="supercar-svg home-car"></div>
+        <div class="superbike-svg home-bike"></div>
+      </div>
+      <div class="home-content">
+        <div class="home-left">
+          <div class="profile-frame">
+            <div class="profile-ring ring-1"></div>
+            <div class="profile-ring ring-2"></div>
+            <div class="profile-ring ring-3"></div>
+            <div class="profile-img-wrap">
+              <div class="profile-placeholder">
+                <span class="profile-initials">MC</span>
+              </div>
+            </div>
+            <div class="profile-scan-line"></div>
+          </div>
+        </div>
+        <div class="home-right">
+          <div class="pre-title">SYSTEM BOOT :: USER IDENTIFIED</div>
+          <div class="glitch-name" data-text="MANAS CHOUDHARY">MANAS CHOUDHARY</div>
+          <div class="typing-container">
+            <span class="typed-role" id="typedRole"></span><span class="cursor-blink">|</span>
+          </div>
+          <p class="home-tagline">I love figuring out how things work behind the scenes — from code and algorithms to the AI tools shaping our future. Currently building, breaking, and learning one project at a time.</p>
+          <div class="status-badge">
+            <span class="status-dot"></span>
+            <span>B.Tech CSE &middot; JECRC University &middot; 2025&ndash;2029</span>
+          </div>
+          <div class="quick-actions">
+            <div class="quick-box" data-target="achievements">
+              <div class="quick-box-glow"></div>
+              <i class="fas fa-certificate"></i>
+              <span>View Certificates</span>
+              <div class="quick-box-arrow">&#8594;</div>
+            </div>
+            <div class="quick-box" data-target="contact">
+              <div class="quick-box-glow"></div>
+              <i class="fas fa-paper-plane"></i>
+              <span>Contact Me</span>
+              <div class="quick-box-arrow">&#8594;</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="chatbot-placeholder">
+        <div class="chatbot-inner">
+          <div class="chatbot-icon"><i class="fas fa-robot"></i></div>
+          <div class="chatbot-text">
+            <span class="chatbot-label">AI ASSISTANT</span>
+            <span class="chatbot-sub">Chatbot integration space &mdash; coming soon</span>
+          </div>
+          <div class="chatbot-pulse"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="section-bg about-bg">
+        <div class="grid-lines"></div>
+        <div class="supercar-svg about-car"></div>
+        <div class="ai-circuit-anim"></div>
+      </div>
+      <div class="section-content">
+        <div class="section-header">
+          <div class="section-tag">// SYS.PROFILE</div>
+          <h2 class="section-title">ABOUT <span class="neon-text">ME</span></h2>
+          <div class="title-underline"></div>
+        </div>
+        <div class="about-grid">
+          <div class="about-card main-bio-card">
+            <div class="card-glow"></div>
+            <div class="card-corner tl"></div><div class="card-corner tr"></div>
+            <div class="card-corner bl"></div><div class="card-corner br"></div>
+            <div class="about-icon-header"><i class="fas fa-user-astronaut"></i></div>
+            <h3>Who Am I?</h3>
+            <p>Just an 18-year-old from Jodhpur, Rajasthan, who gets genuinely excited when code does something unexpected — even when it crashes. I'm a first-year B.Tech CSE student at JECRC University and I'm absolutely obsessed with figuring out how things work under the hood.</p>
+            <p>I completed my schooling with 82% from a CBSE school in Jodhpur, and from day one I knew technology was my arena. Whether it's dissecting a sorting algorithm at 2 AM or exploring the latest AI model, I'm all in.</p>
+          </div>
+          <div class="about-card journey-card">
+            <div class="card-glow"></div>
+            <div class="card-corner tl"></div><div class="card-corner tr"></div>
+            <div class="card-corner bl"></div><div class="card-corner br"></div>
+            <div class="about-icon-header"><i class="fas fa-rocket"></i></div>
+            <h3>The Journey</h3>
+            <p>I'm currently sharpening my skills in C, C++, HTML, CSS, JavaScript, Git, and modern AI tools. Every project I touch teaches me something new — I've broken more things than I've built, and I consider that a win.</p>
+            <p>I thrive on challenges, love competitive chess and badminton (yes, I have trophies), and find equal excitement in a clean algorithm and a roaring supercar engine.</p>
+          </div>
+          <div class="about-card goal-card">
+            <div class="card-glow"></div>
+            <div class="card-corner tl"></div><div class="card-corner tr"></div>
+            <div class="card-corner bl"></div><div class="card-corner br"></div>
+            <div class="about-icon-header"><i class="fas fa-bullseye"></i></div>
+            <h3>The Goal</h3>
+            <p>My mission is to become a skilled software developer who builds things that actually matter. I want to contribute to impactful projects, explore software engineering and AI opportunities, and one day — build something that changes how people experience technology.</p>
+          </div>
+          <div class="about-card stats-card">
+            <div class="card-glow"></div>
+            <div class="card-corner tl"></div><div class="card-corner tr"></div>
+            <div class="card-corner bl"></div><div class="card-corner br"></div>
+            <div class="stats-grid">
+              <div class="stat-item"><span class="stat-num" data-target="18">0</span><span class="stat-label">Age</span></div>
+              <div class="stat-item"><span class="stat-num" data-target="82">0</span><span class="stat-suffix">%</span><span class="stat-label">Board Score</span></div>
+              <div class="stat-item"><span class="stat-num" data-target="5">0</span><span class="stat-suffix">+</span><span class="stat-label">Projects</span></div>
+              <div class="stat-item"><span class="stat-num" data-target="3">0</span><span class="stat-suffix">+</span><span class="stat-label">Certs</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="section">
+      <div class="section-bg edu-bg">
+        <div class="grid-lines"></div>
+        <div class="paper-bg-anim"></div>
+        <div class="supercar-svg edu-car"></div>
+      </div>
+      <div class="section-content">
+        <div class="section-header">
+          <div class="section-tag">// EDU.LOG</div>
+          <h2 class="section-title">EDUCATION <span class="neon-text">PATH</span></h2>
+          <div class="title-underline"></div>
+        </div>
+        <div class="timeline">
+          <div class="timeline-line"></div>
+          <div class="edu-card-wrap left-card">
+            <div class="timeline-dot pulse-dot"></div>
+            <div class="edu-card">
+              <div class="card-glow"></div>
+              <div class="card-corner tl"></div><div class="card-corner tr"></div>
+              <div class="card-corner bl"></div><div class="card-corner br"></div>
+              <div class="edu-badge current-badge">CURRENT</div>
+              <div class="edu-icon"><i class="fas fa-university"></i></div>
+              <h3>B.Tech &mdash; Computer Science Engineering</h3>
+              <div class="edu-institute">JECRC University, Jaipur</div>
+              <div class="edu-period">2025 &ndash; 2029</div>
+              <div class="edu-tags"><span>CSE</span><span>AI/ML</span><span>Full Stack</span></div>
+              <p>Focused on programming fundamentals, data structures, algorithms, and modern software development practices.</p>
+            </div>
+          </div>
+          <div class="edu-card-wrap right-card">
+            <div class="timeline-dot"></div>
+            <div class="edu-card">
+              <div class="card-glow"></div>
+              <div class="card-corner tl"></div><div class="card-corner tr"></div>
+              <div class="card-corner bl"></div><div class="card-corner br"></div>
+              <div class="edu-badge score-badge">82%</div>
+              <div class="edu-icon"><i class="fas fa-school"></i></div>
+              <h3>Class XII &mdash; CBSE Board</h3>
+              <div class="edu-institute">Jodhpur, Rajasthan</div>
+              <div class="edu-period">Completed 2024</div>
+              <div class="edu-tags"><span>Science</span><span>Mathematics</span></div>
+              <p>Completed senior secondary with 82% from CBSE board, Jodhpur.</p>
+            </div>
+          </div>
+          <div class="edu-card-wrap left-card">
+            <div class="timeline-dot"></div>
+            <div class="edu-card">
+              <div class="card-glow"></div>
+              <div class="card-corner tl"></div><div class="card-corner tr"></div>
+              <div class="card-corner bl"></div><div class="card-corner br"></div>
+              <div class="edu-badge score-badge">88%</div>
+              <div class="edu-icon"><i class="fas fa-book-open"></i></div>
+              <h3>Class X &mdash; CBSE Board</h3>
+              <div class="edu-institute">Jodhpur, Rajasthan</div>
+              <div class="edu-period">Completed 2022</div>
+              <div class="edu-tags"><span>Mathematics</span><span>Science</span></div>
+              <p>Secondary schooling with strong academics and early interest in computers.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <div class="section-bg skills-bg">
+        <div class="grid-lines"></div>
+        <div class="circuit-bg"></div>
+        <div class="superbike-svg skills-bike"></div>
+        <div class="ai-nodes-anim"></div>
+      </div>
+      <div class="section-content">
+        <div class="section-header">
+          <div class="section-tag">// SKILL.MATRIX</div>
+          <h2 class="section-title">SKILL <span class="neon-text">SET</span></h2>
+          <div class="title-underline"></div>
+        </div>
+        <div class="skills-categories">
+          <div class="skill-category">
+            <div class="category-header"><i class="fas fa-code"></i><span>PROGRAMMING</span></div>
+            <div class="skill-boxes">
+              <div class="skill-box learning"><div class="skill-box-glow"></div><i class="fas fa-terminal"></i><span class="skill-name">C Language</span><span class="skill-badge learning-badge">LEARNING</span><div class="skill-bar"><div class="skill-fill" data-width="55"></div></div></div>
+              <div class="skill-box learning"><div class="skill-box-glow"></div><i class="fas fa-terminal"></i><span class="skill-name">C++</span><span class="skill-badge learning-badge">LEARNING</span><div class="skill-bar"><div class="skill-fill" data-width="40"></div></div></div>
+              <div class="skill-box proficient"><div class="skill-box-glow"></div><i class="fab fa-html5"></i><span class="skill-name">HTML5</span><span class="skill-badge pro-badge">KNOWS</span><div class="skill-bar"><div class="skill-fill" data-width="75"></div></div></div>
+              <div class="skill-box proficient"><div class="skill-box-glow"></div><i class="fab fa-css3-alt"></i><span class="skill-name">CSS3</span><span class="skill-badge pro-badge">KNOWS</span><div class="skill-bar"><div class="skill-fill" data-width="65"></div></div></div>
+              <div class="skill-box learning"><div class="skill-box-glow"></div><i class="fab fa-js"></i><span class="skill-name">JavaScript</span><span class="skill-badge learning-badge">LEARNING</span><div class="skill-bar"><div class="skill-fill" data-width="45"></div></div></div>
+            </div>
+          </div>
+          <div class="skill-category">
+            <div class="category-header"><i class="fas fa-tools"></i><span>TOOLS &amp; TECH</span></div>
+            <div class="skill-boxes">
+              <div class="skill-box proficient"><div class="skill-box-glow"></div><i class="fab fa-git-alt"></i><span class="skill-name">Git &amp; GitHub</span><span class="skill-badge pro-badge">KNOWS</span><div class="skill-bar"><div class="skill-fill" data-width="60"></div></div></div>
+              <div class="skill-box learning"><div class="skill-box-glow"></div><i class="fas fa-robot"></i><span class="skill-name">AI Tools</span><span class="skill-badge learning-badge">WORKING ON</span><div class="skill-bar"><div class="skill-fill" data-width="70"></div></div></div>
+              <div class="skill-box learning"><div class="skill-box-glow"></div><i class="fas fa-wrench"></i><span class="skill-name">Dev Tools</span><span class="skill-badge learning-badge">WORKING ON</span><div class="skill-bar"><div class="skill-fill" data-width="55"></div></div></div>
+              <div class="skill-box proficient"><div class="skill-box-glow"></div><i class="fas fa-palette"></i><span class="skill-name">Editing Tools</span><span class="skill-badge pro-badge">KNOWS</span><div class="skill-bar"><div class="skill-fill" data-width="80"></div></div></div>
+            </div>
+          </div>
+          <div class="skill-category">
+            <div class="category-header"><i class="fas fa-star"></i><span>SOFT SKILLS</span></div>
+            <div class="skill-boxes">
+              <div class="skill-box proficient"><div class="skill-box-glow"></div><i class="fas fa-keyboard"></i><span class="skill-name">Pro Typing</span><span class="skill-badge pro-badge">EXPERT</span><div class="skill-bar"><div class="skill-fill" data-width="90"></div></div></div>
+              <div class="skill-box proficient"><div class="skill-box-glow"></div><i class="fas fa-brain"></i><span class="skill-name">Problem Solving</span><span class="skill-badge pro-badge">SHARP</span><div class="skill-bar"><div class="skill-fill" data-width="70"></div></div></div>
+              <div class="skill-box proficient"><div class="skill-box-glow"></div><i class="fas fa-lightbulb"></i><span class="skill-name">Quick Learner</span><span class="skill-badge pro-badge">FAST</span><div class="skill-bar"><div class="skill-fill" data-width="85"></div></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ACHIEVEMENTS -->
+    <section id="achievements" class="section">
+      <div class="section-bg ach-bg">
+        <div class="grid-lines"></div>
+        <div class="supercar-svg ach-car"></div>
+        <div class="ai-circuit-anim"></div>
+      </div>
+      <div class="section-content">
+        <div class="section-header">
+          <div class="section-tag">// TROPHY.VAULT</div>
+          <h2 class="section-title">CERTS &amp; <span class="neon-text">WINS</span></h2>
+          <div class="title-underline"></div>
+        </div>
+        <div class="ach-two-col">
+          <div class="ach-col">
+            <div class="col-header hobbies-header"><i class="fas fa-gamepad"></i><span>HOBBIES &amp; SPORTS</span></div>
+            <div class="ach-box">
+              <div class="card-glow"></div>
+              <div class="card-corner tl"></div><div class="card-corner tr"></div>
+              <div class="card-corner bl"></div><div class="card-corner br"></div>
+              <div class="ach-medal gold-medal"></div>
+              <div class="ach-info">
+                <div class="ach-rank">🥇 1st Place</div>
+                <div class="ach-name">Chess &mdash; Under 17</div>
+                <div class="ach-desc">District-level tournament. Strategic mind wins the board.</div>
+              </div>
+            </div>
+            <div class="ach-box">
+              <div class="card-glow"></div>
+              <div class="card-corner tl"></div><div class="card-corner tr"></div>
+              <div class="card-corner bl"></div><div class="card-corner br"></div>
+              <div class="ach-medal gold-medal"></div>
+              <div class="ach-info">
+                <div class="ach-rank">🥇 1st Place</div>
+                <div class="ach-name">Badminton Duo &mdash; Under 17</div>
+                <div class="ach-desc">Doubles category. Team synergy and sharp reflexes.</div>
+              </div>
+            </div>
+          </div>
+          <div class="ach-col">
+            <div class="col-header certs-header"><i class="fas fa-certificate"></i><span>CERTIFICATIONS</span></div>
+            <div class="ach-box cert-box">
+              <div class="card-glow"></div>
+              <div class="card-corner tl"></div><div class="card-corner tr"></div>
+              <div class="card-corner bl"></div><div class="card-corner br"></div>
+              <div class="cert-icon"><i class="fas fa-robot"></i></div>
+              <div class="ach-info">
+                <div class="ach-name">AI Workshop Certificate</div>
+                <div class="ach-desc">Hands-on AI workshop covering ML basics, prompt engineering, and real-world AI applications.</div>
+                <div class="cert-tag">AI &middot; Machine Learning</div>
+              </div>
+            </div>
+            <div class="ach-box cert-box">
+              <div class="card-glow"></div>
+              <div class="card-corner tl"></div><div class="card-corner tr"></div>
+              <div class="card-corner bl"></div><div class="card-corner br"></div>
+              <div class="cert-icon"><i class="fas fa-graduation-cap"></i></div>
+              <div class="ach-info">
+                <div class="ach-name">AI Course Degree</div>
+                <div class="ach-desc">Comprehensive Artificial Intelligence course with practical projects and assessments.</div>
+                <div class="cert-tag">AI &middot; Deep Learning</div>
+              </div>
+            </div>
+            <div class="ach-box cert-box">
+              <div class="card-glow"></div>
+              <div class="card-corner tl"></div><div class="card-corner tr"></div>
+              <div class="card-corner bl"></div><div class="card-corner br"></div>
+              <div class="cert-icon"><i class="fas fa-cloud"></i></div>
+              <div class="ach-info">
+                <div class="ach-name">Cloud Computing Course Degree</div>
+                <div class="ach-desc">Cloud computing certification covering deployment, infrastructure, and scalable systems.</div>
+                <div class="cert-tag">Cloud &middot; Infrastructure</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="section-bg contact-bg">
+        <div class="grid-lines"></div>
+        <div class="supercar-svg contact-car"></div>
+        <div class="superbike-svg contact-bike"></div>
+        <div class="signal-waves"></div>
+      </div>
+      <div class="section-content">
+        <div class="section-header">
+          <div class="section-tag">// CONNECT.SYS</div>
+          <h2 class="section-title">GET IN <span class="neon-text">TOUCH</span></h2>
+          <div class="title-underline"></div>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-card">
+            <div class="card-glow"></div>
+            <div class="card-corner tl"></div><div class="card-corner tr"></div>
+            <div class="card-corner bl"></div><div class="card-corner br"></div>
+            <div class="contact-icon-wrap"><i class="fas fa-envelope-open-text"></i></div>
+            <div class="contact-label">EMAIL</div>
+            <a href="mailto:manas.26bcon2210@jecrcu.edu.in" class="contact-value">manas.26bcon2210@jecrcu.edu.in</a>
+          </div>
+          <div class="contact-card">
+            <div class="card-glow"></div>
+            <div class="card-corner tl"></div><div class="card-corner tr"></div>
+            <div class="card-corner bl"></div><div class="card-corner br"></div>
+            <div class="contact-icon-wrap"><i class="fas fa-phone-alt"></i></div>
+            <div class="contact-label">PHONE</div>
+            <a href="tel:+919024656487" class="contact-value">+91 90246 56487</a>
+          </div>
+          <div class="contact-card">
+            <div class="card-glow"></div>
+            <div class="card-corner tl"></div><div class="card-corner tr"></div>
+            <div class="card-corner bl"></div><div class="card-corner br"></div>
+            <div class="contact-icon-wrap"><i class="fab fa-github"></i></div>
+            <div class="contact-label">GITHUB</div>
+            <a href="https://github.com/" target="_blank" class="contact-value">github.com/ManasC</a>
+          </div>
+          <div class="contact-card">
+            <div class="card-glow"></div>
+            <div class="card-corner tl"></div><div class="card-corner tr"></div>
+            <div class="card-corner bl"></div><div class="card-corner br"></div>
+            <div class="contact-icon-wrap"><i class="fab fa-linkedin"></i></div>
+            <div class="contact-label">LINKEDIN</div>
+            <a href="https://linkedin.com/" target="_blank" class="contact-value">linkedin.com/in/ManasC</a>
+          </div>
+          <div class="contact-card location-card">
+            <div class="card-glow"></div>
+            <div class="card-corner tl"></div><div class="card-corner tr"></div>
+            <div class="card-corner bl"></div><div class="card-corner br"></div>
+            <div class="contact-icon-wrap"><i class="fas fa-map-marker-alt"></i></div>
+            <div class="contact-label">LOCATION</div>
+            <span class="contact-value">Jodhpur, Rajasthan, India</span>
+          </div>
+        </div>
+        <div class="footer-sig">
+          <div class="sig-line"></div>
+          <span>&copy; 2025 Manas Choudhary &middot; Built with <span class="neon-text">passion</span> &amp; caffeine</span>
+          <div class="sig-line"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
